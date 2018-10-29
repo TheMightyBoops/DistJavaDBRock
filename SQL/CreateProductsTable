@@ -1,0 +1,24 @@
+CREATE TABLE Products (
+  ProductID   INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
+  Name        CHAR(30),
+  Description CHAR(200),
+  Price       DOUBLE
+);
+
+INSERT INTO PRODUCTS VALUES (
+    DEFAULT, 'Old Gray',
+    'This classic is the most basic standard rock we do at Rocks and Rocks alone',
+    4.99
+);
+
+INSERT INTO PRODUCTS VALUES (
+    DEFAULT, 'Classic Granite',
+  'Add a little style and flair to your rock, you only live once.',
+  6.00
+);
+
+INSERT INTO PRODUCTS VALUES (
+    DEFAULT , 'Dark Slate','Dark Slate Like a chalkboard, but you buy it from us.',
+  5.00
+
+)

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+    <servlet>
+        <servlet-name>ProductController</servlet-name>
+        <servlet-class>com.lucas.nolting.controllers.ProductController</servlet-class>
+    </servlet>
+
+    <!--product -->
+    <servlet-mapping>
+        <servlet-name>ProductController</servlet-name>
+        <url-pattern>/ProductController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!--cart -->
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>com.lucas.nolting.controllers.CartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/Cart</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DisplayCart</servlet-name>
+        <servlet-class>com.lucas.nolting.controllers.DisplayCartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayCart</servlet-name>
+        <url-pattern>/DisplayCart</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ClearCart</servlet-name>
+        <servlet-class>com.lucas.nolting.controllers.ClearCartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClearCart</servlet-name>
+        <url-pattern>/ClearCart</url-pattern>
+    </servlet-mapping>
+</web-app>
